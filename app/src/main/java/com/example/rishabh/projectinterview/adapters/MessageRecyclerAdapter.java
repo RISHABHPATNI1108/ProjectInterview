@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.rishabh.projectinterview.R;
 import com.example.rishabh.projectinterview.models.ChatResponseModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MessageRecyclerAdapter extends RecyclerView.Adapter {
@@ -58,11 +59,11 @@ public class MessageRecyclerAdapter extends RecyclerView.Adapter {
         if (viewType == VIEW_TYPE_MESSAGE_RECEIVED) {
             view = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.received_messages_layout, parent, false);
-            return new SentMessageHolder(view);
+            return new ReceivedMessageHolder(view);
         } else if (viewType == VIEW_TYPE_MESSAGE_SENT) {
             view = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.sent_message_layout, parent, false);
-            return new ReceivedMessageHolder(view);
+            return new SentMessageHolder(view);
         }
 
         return null;

@@ -14,6 +14,9 @@ import android.view.View;
 
 import com.example.rishabh.projectinterview.fragments.ChatFragment;
 import com.example.rishabh.projectinterview.R;
+import com.example.rishabh.projectinterview.fragments.CodesFragment;
+import com.example.rishabh.projectinterview.fragments.QnAFragment;
+import com.example.rishabh.projectinterview.fragments.ThreadsFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,13 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Toolbar mTopToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mTopToolbar);
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-
 
         tabLayout =  findViewById(R.id.tabs);
         viewPager =  findViewById(R.id.pager);
@@ -85,15 +84,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             switch (position) {
                 case 0:
                     return new ChatFragment();
-
                 case 1:
-                                       return new ChatFragment();
+                    return new ThreadsFragment();
                 case 2:
-                    return new ChatFragment();
-
+                    return new QnAFragment();
                 case 3:
-                    return new ChatFragment();
-
+                    return new CodesFragment();
                 default:
                     return null;
             }

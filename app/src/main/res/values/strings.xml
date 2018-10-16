@@ -9,4 +9,13 @@
     <string name="hi_man_how_are_you">sample_message_chat</string>
     <string name="dp_sender_chat">Sendor DP</string>
     <string name="sample_sent_message">hello, hello!</string>
+    <string name="title_threads">Title</string>
+    <string name="sample_text_threads">Sample Text</string>
+    <string name="search">Search</string>
+    <string name="this_is_a_sample_quetion">This is a sample quetion</string>
+    <string name="sample_upvote">21</string>
+    <string name="icon">Icon</string>
+    <string name="sample_date">Date By UserName</string>
+    <string name="actionbar_spinner">Spinner</string>
+    <string name="c">C</string>
 </resources>

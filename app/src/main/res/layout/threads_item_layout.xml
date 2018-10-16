@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text_threads"
+        android:text="@string/title_threads"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/text_threads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_text_threads"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tag1_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag 1"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tag2_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag 2"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tag3_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag 3"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_weight="1"
+            android:id="@+id/username_threads"
+            android:textAlignment="viewEnd"
+            android:gravity="end" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textAlignment="viewEnd"
+            android:id="@+id/time_threads"
+            android:layout_weight="1"
+            android:gravity="end" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark" />
+
+</LinearLayout>

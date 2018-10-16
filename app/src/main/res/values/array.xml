@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ques_filter">
+        <item>Trending</item>
+        <item>Most Recent</item>
+        <item>Most Upvoted</item>
+        <item>My Questions</item>
+    </string-array>
+</resources>

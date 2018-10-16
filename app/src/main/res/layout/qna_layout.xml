@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    android:layout_marginTop="10dp"
+    tools:ignore="UnusedAttribute">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_is_a_sample_quetion"
+        android:id="@+id/ques_qna"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tag1_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag 1"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tag2_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag 2"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tag3_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag 3"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sample_upvote"
+            android:id="@+id/upvote_qna"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/icon"
+            android:text="@string/sample_upvote" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sample_upvote"
+            android:id="@+id/downvote_qna"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/icon"
+            android:text="@string/sample_upvote" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/date_bu_uname"
+            android:text="@string/sample_date"/>
+
+    </LinearLayout>
+
+</LinearLayout>
