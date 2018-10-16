@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Decoder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_send">SEND</string>
+    <string name="enter_message_edit_text_hit">Enter message</string>
+    <string name="sample_name_chat">John Doe</string>
+    <string name="hi_man_how_are_you">sample_message_chat</string>
+    <string name="dp_sender_chat">Sendor DP</string>
+    <string name="sample_sent_message">hello, hello!</string>
+</resources>
