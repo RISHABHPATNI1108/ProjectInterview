@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.rishabh.projectinterview.R;
 import com.example.rishabh.projectinterview.models.ChatResponseModel;
 
@@ -119,6 +120,11 @@ public class MessageRecyclerAdapter extends RecyclerView.Adapter {
             // Format the stored timestamp into a readable String using method.
 
 
+
+            Glide
+                    .with(mContext)
+                    .load(message.getUserImageUrl())
+                    .into(profileImage);
             nameText.setText(message.getUserName());
 
             // Insert the profile image from the URL into the ImageView.

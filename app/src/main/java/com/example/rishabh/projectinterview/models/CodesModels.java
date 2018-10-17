@@ -24,7 +24,7 @@ public class CodesModels{
 	private String userName;
 
 	@SerializedName("time")
-	private String time;
+	private long time;
 
 	@SerializedName("title")
 	private String title;
@@ -83,11 +83,11 @@ public class CodesModels{
 		return userName;
 	}
 
-	public void setTime(String time){
+	public void setTime(long time){
 		this.time = time;
 	}
 
-	public String getTime(){
+	public long getTime(){
 		return time;
 	}
 

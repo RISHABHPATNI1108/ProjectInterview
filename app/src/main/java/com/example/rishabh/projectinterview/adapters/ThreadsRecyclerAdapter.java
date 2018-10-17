@@ -1,6 +1,7 @@
 package com.example.rishabh.projectinterview.adapters;
 
 import android.content.Context;
+
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 import com.example.rishabh.projectinterview.R;
 import com.example.rishabh.projectinterview.models.ThreadsResponseModel;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 public class ThreadsRecyclerAdapter extends RecyclerView.Adapter<ThreadsRecyclerAdapter.ThreadsViewHolder> {
@@ -37,12 +40,25 @@ public class ThreadsRecyclerAdapter extends RecyclerView.Adapter<ThreadsRecycler
     @Override
     public void onBindViewHolder(@NonNull ThreadsViewHolder holder, int position) {
         holder.tvTitle.setText(threadsResponseModelList.get(position).getTitle());
-        holder.tvTime.setText(threadsResponseModelList.get(position).getTime());
+
+        holder.tvTime.setText(
+                getDate(threadsResponseModelList.get(position).getTime(), "dd/MM/yyyy hh:mm:ss"));
         holder.tvUname.setText(threadsResponseModelList.get(position).getUserName());
         holder.tvTag3.setText(threadsResponseModelList.get(position).getTags().get(0));
         holder.tvTag2.setText(threadsResponseModelList.get(position).getTags().get(1));
         holder.tvTag1.setText(threadsResponseModelList.get(position).getTags().get(2));
         holder.tvText.setText(threadsResponseModelList.get(position).getText());
+    }
+
+    public static String getDate(long milliSeconds, String dateFormat)
+    {
+        // Create a DateFormatter object for displaying date in specified format.
+        SimpleDateFormat formatter = new SimpleDateFormat(dateFormat);
+
+        // Create a calendar object that will convert the date and time value in milliseconds to date.
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(milliSeconds);
+        return formatter.format(calendar.getTime());
     }
 
     @Override
