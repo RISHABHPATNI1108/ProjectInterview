@@ -2,7 +2,4 @@
 
 - This is just for testing PR api
 
-
-#### Love to code!
-
-Hello World
+This is my code to test the API, Hello World 
